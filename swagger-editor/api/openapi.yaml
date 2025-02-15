@@ -24,6 +24,25 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/User'
+              example:
+                - id: "1"
+                  surname: "Doe"
+                  name: "John"
+                  birthdate: "1990-01-01"
+                  address:
+                    street: "123 Main St"
+                    city: "Springfield"
+                    zip: "12345"
+                    country: "USA"
+                - id: "2"
+                  surname: "Smith"
+                  name: "Jane"
+                  birthdate: "1985-05-15"
+                  address:
+                    street: "456 Elm St"
+                    city: "Shelbyville"
+                    zip: "67890"
+                    country: "USA"
     post:
       tags:
         - user
@@ -38,6 +57,16 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/User'
+            example:
+              id: "3"
+              surname: "Brown"
+              name: "Charlie"
+              birthdate: "2000-12-12"
+              address:
+                street: "789 Oak St"
+                city: "Capital City"
+                zip: "54321"
+                country: "USA"
       responses:
         '201':
           description: User created
@@ -63,6 +92,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/User'
+              example:
+                id: "1"
+                surname: "Doe"
+                name: "John"
+                birthdate: "1990-01-01"
+                address:
+                  street: "123 Main St"
+                  city: "Springfield"
+                  zip: "12345"
+                  country: "USA"
     put:
       tags:
         - user
@@ -83,6 +122,15 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/User'
+            example:
+              surname: "UpdatedSurname"
+              name: "UpdatedName"
+              birthdate: "1995-06-25"
+              address:
+                street: "Updated St"
+                city: "New City"
+                zip: "98765"
+                country: "USA"
       responses:
         '200':
           description: User updated
