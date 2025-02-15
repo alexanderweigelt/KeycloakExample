@@ -6,3 +6,6 @@ grant_type = client_credentials &
 client_id = keycloak-client-credentials &
 client_secret = paGx4Qr3N4IaETHihaZGFvoyINDBVda4 &
 scope=read write
+
+### Keycloak Authorization Code
+GET http://localhost:9090/realms/keycloak-example/protocol/openid-connect/auth?response_type=code&client_id=keycloak-authorization-code&redirect_uri=http://localhost:8080/docs&scope=openid%20read%20write&state=random_state_value
