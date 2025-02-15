@@ -1,0 +1,19 @@
+{
+  "name": "@awe/backend",
+  "version": "0.0.1",
+  "description": "keycloak identity and access management example",
+  "main": "index.js",
+  "scripts": {
+	"start": "node index.js"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "private": true,
+  "dependencies": {
+    "@awe/swagger-editor": "*",
+    "connect": "^3.2.0",
+    "js-yaml": "^3.3.0",
+    "oas3-tools": "^2.2.3"
+  }
+}

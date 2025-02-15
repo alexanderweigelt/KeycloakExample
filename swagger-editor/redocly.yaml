@@ -1,0 +1,11 @@
+extends:
+  - recommended
+
+apis:
+  user@v1:
+    root: ./api/openapi.yaml
+    rules:
+      no-ambiguous-paths: error
+      operation-4xx-response: off
+      no-server-example.com: off
+      info-license: off

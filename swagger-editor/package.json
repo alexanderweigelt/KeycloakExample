@@ -1,0 +1,15 @@
+{
+  "name": "@awe/swagger-editor",
+  "version": "1.0.0",
+  "description": "API specification",
+  "files": [
+    "api"
+  ],
+  "scripts": {
+    "test": "redocly lint"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@redocly/cli": "^1.29.0"
+  }
+}

@@ -1,0 +1,8 @@
+### Keycloak Client Credentials
+POST http://localhost:9090/realms/keycloak-example/protocol/openid-connect/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type = client_credentials &
+client_id = keycloak-client-credentials &
+client_secret = paGx4Qr3N4IaETHihaZGFvoyINDBVda4 &
+scope=read write
